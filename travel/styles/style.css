@@ -5,6 +5,12 @@
 }
 
 @font-face {
+    font-family: 'Red Hat Text Bold';
+    src: url("../assets/fonts/RedHatText-Medium.ttf");
+    font-weight: 600;
+}
+
+@font-face {
     font-family: 'Magra';
     src: url("../assets/fonts/Magra-Bold.ttf");
     font-weight: 600;
@@ -63,12 +69,12 @@ a {
     flex-wrap: nowrap;
     column-gap: 12.5px;
 
-    font-family: 'Red Hat Text';
+    font-family: 'Red Hat Text Bold';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: 0.03em;
+    /* letter-spacing: 0.03em; */
     color: var(--color-white);
 
     padding: 11.5px 30.5px;
@@ -147,12 +153,12 @@ a {
     flex-direction: row;
     column-gap: 42px;
 
-    font-family: 'Red Hat Text';
+    font-family: 'Red Hat Text Bold';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 21px;
-    letter-spacing: 0.03em;
+    /* letter-spacing: 0.02em; */
     color: var(--color-white);
 
     list-style: none;
@@ -160,8 +166,39 @@ a {
     padding: 0;
 }
 
+.nav__link {
+    background-image: linear-gradient(to right,
+            var(--color-button),
+            var(--color-button) 50%,
+            var(--color-white) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__link:before {
+    content: '';
+    background: var(--color-button);
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
 .nav__link:hover {
-    color: var(--color-button);
+    background-position: 0;
+}
+
+.nav__link:hover::before {
+    width: 98%;
 }
 
 .header .button {
