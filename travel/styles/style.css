@@ -1,7 +1,26 @@
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url("../assets/fonts/RedHatText-Regular.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Red Hat Text Bold';
+    src: url("../assets/fonts/RedHatText-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Arial Cursive';
+    src: url("../assets/fonts/arial-italic.ttf");
+    font-weight: 400;
+}
+
 :root {
     --color-white: #ffffff;
     --color-light: #E5E5E5;
     --color-button: #0D606F;
+    --color-btn-hover: #10798C;
 }
 
 html {
@@ -38,6 +57,43 @@ a {
 }
 
 
+.button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    column-gap: 12.5px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+
+    padding: 11.5px 30.5px;
+    background-color: var(--color-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border: 2px solid var(--color-button);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.arrow-icon {
+    flex: 0 0 33px;
+    background-image: url(../assets/icons/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
 /* ---------- Header ---------- */
 
 .header {
@@ -67,6 +123,12 @@ a {
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: center;
+}
+
+.header .button {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 8px 28px;
 }
 
 /* ---------- Preview ---------- */
