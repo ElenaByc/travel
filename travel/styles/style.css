@@ -25,7 +25,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--color-light);
+    background-color: rgba(13, 96, 111, 0.5);
 }
 
 *,
@@ -82,6 +82,10 @@ a {
 
 .button:hover {
     background-color: var(--color-btn-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 2px 3px rgba(13, 96, 111, 0.16),
+        0 0 0 2px var(--color-button) inset,
+        0 0 0 3px var(--color-white) inset;
 }
 
 .arrow-icon {
@@ -156,7 +160,7 @@ a {
     padding: 0;
 }
 
-.nav__link:hover{
+.nav__link:hover {
     color: var(--color-button);
 }
 
