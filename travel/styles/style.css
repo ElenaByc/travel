@@ -1,0 +1,84 @@
+:root {
+    --color-white: #ffffff;
+    --color-light: #E5E5E5;
+    --color-button: #0D606F;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-light);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    background-image: url(../assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1440px auto;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    transition: 0.3s;
+}
+
+.header,
+.footer,
+.section {
+    width: 100%;
+}
+
+
+/* ---------- Header ---------- */
+
+.header {
+    height: 90px;
+    padding: 25px 120px 24px;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.header__home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.header__logo {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/icons/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+/* ---------- Preview ---------- */
+
+
+/* ---------- Steps ---------- */
+
+
+/* ---------- Destinations ---------- */
+
+
+/* ---------- Stories ---------- */
+
+
+/* ---------- Footer ---------- */
