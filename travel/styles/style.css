@@ -17,9 +17,21 @@
 }
 
 @font-face {
-    font-family: 'Arial Cursive';
-    src: url("../assets/fonts/arial-italic.ttf");
-    font-weight: 600;
+    font-family: 'Aleo';
+    src: url("../assets/fonts/Aleo-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Aleo Italic Bold';
+    src: url("../assets/fonts/Aleo-BoldItalic.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Aleo Italic';
+    src: url("../assets/fonts/Aleo-Italic.ttf");
+    font-weight: 400;
 }
 
 :root {
@@ -27,6 +39,7 @@
     --color-light: #E5E5E5;
     --color-button: #0D606F;
     --color-btn-hover: #10798C;
+    --color-orange: #F2785C;
 }
 
 html {
@@ -40,6 +53,17 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h2 {
+    color: var(--color-orange);
+    text-transform: uppercase;
 }
 
 .content-wrapper {
@@ -77,7 +101,7 @@ a {
     /* letter-spacing: 0.03em; */
     color: var(--color-white);
 
-    padding: 11.5px 30.5px;
+    padding: 12px 32px;
     background-color: var(--color-button);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border: 2px solid var(--color-button);
@@ -106,7 +130,7 @@ a {
 /* ---------- Header ---------- */
 
 .header {
-    padding: 25px 120px 24px;
+    padding: 24px 120px 24px;
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 
@@ -203,12 +227,68 @@ a {
 
 .header .button {
     font-size: 16px;
-    line-height: 21px;
-    padding: 8px 28px;
+    line-height: 22px;
+    padding: 8px 29px 8px 27px;
 }
 
 /* ---------- Preview ---------- */
 
+.preview {
+    padding: 30px 120px 221px;
+}
+
+.preview__content {
+    width: 892px;
+    padding: 1px 0 33px;
+}
+
+h1 {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: var(--color-white);
+    margin-bottom: 33px;
+}
+
+.preview p {
+    font-family: 'Aleo Italic Bold';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-white);
+    margin-bottom: 46px;
+}
+
+.preview__search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px 18px 17px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
+
+.preview__search-box input {
+    width: calc(100% - 250px);
+    padding-left: 22px;
+    border: none;
+    appearance: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Aleo Italic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-orange);
+}
+
+.preview__search-box ::placeholder {
+    color: var(--color-orange);
+}
 
 /* ---------- Steps ---------- */
 
