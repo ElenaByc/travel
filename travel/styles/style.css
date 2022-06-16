@@ -18,6 +18,12 @@
 
 @font-face {
     font-family: 'Aleo';
+    src: url("../assets/fonts/Aleo-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Aleo Bold';
     src: url("../assets/fonts/Aleo-Bold.ttf");
     font-weight: 700;
 }
@@ -37,7 +43,7 @@
 :root {
     --color-white: #ffffff;
     --color-light: #E5E5E5;
-    --color-button: #0D606F;
+    --color-primary: #0D606F;
     --color-btn-hover: #10798C;
     --color-orange: #F2785C;
 }
@@ -45,7 +51,7 @@
 html {
     scroll-behavior: smooth;
     /* background-color: rgba(13, 96, 111, 0.5); */
-    background: linear-gradient(rgba(242, 120, 92, 0.7), 30%, rgba(13, 96, 111, 0.5));
+    background: linear-gradient(rgba(242, 120, 92, 0.7), 25%, rgba(13, 96, 111, 0.5));
     background-repeat: no-repeat;
 }
 
@@ -61,11 +67,6 @@ h1,
 h2,
 h3 {
     margin: 0;
-}
-
-h2 {
-    color: var(--color-orange);
-    text-transform: uppercase;
 }
 
 .content-wrapper {
@@ -89,6 +90,26 @@ a {
     width: 100%;
 }
 
+.section__header {
+    font-family: 'Red Hat Text Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: var(--color-orange);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section p {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-primary);
+}
 
 .button {
     display: flex;
@@ -105,9 +126,9 @@ a {
     color: var(--color-white);
 
     padding: 12px 32px;
-    background-color: var(--color-button);
+    background-color: var(--color-primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    border: 2px solid var(--color-button);
+    border: 2px solid var(--color-primary);
     border-radius: 10px;
     cursor: pointer;
     transition: .3s;
@@ -117,7 +138,7 @@ a {
     background-color: var(--color-btn-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
         0px 2px 3px rgba(13, 96, 111, 0.16),
-        0 0 0 2px var(--color-button) inset,
+        0 0 0 2px var(--color-primary) inset,
         0 0 0 3px var(--color-white) inset;
 }
 
@@ -195,8 +216,8 @@ a {
 
 .nav__link {
     background-image: linear-gradient(to right,
-            var(--color-button),
-            var(--color-button) 50%,
+            var(--color-primary),
+            var(--color-primary) 50%,
             var(--color-white) 50%);
     background-size: 200% 100%;
     background-position: -100%;
@@ -210,7 +231,7 @@ a {
 
 .nav__link:before {
     content: '';
-    background: var(--color-button);
+    background: var(--color-primary);
     display: block;
     position: absolute;
     bottom: -1px;
@@ -234,7 +255,7 @@ a {
     padding: 8px 29px 8px 27px;
 }
 
-/* ---------- Preview ---------- */
+/* ---------- Preview Section ---------- */
 
 .preview {
     padding: 30px 120px 221px;
@@ -246,7 +267,7 @@ a {
 }
 
 h1 {
-    font-family: 'Aleo';
+    font-family: 'Aleo Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
@@ -293,13 +314,77 @@ h1 {
     color: var(--color-orange);
 }
 
-/* ---------- Steps ---------- */
+/* ---------- Steps Section ---------- */
+
+.steps {
+    padding: 80px 130px 97px;
+}
+
+.steps__items-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.steps__item {
+    width: 320px;
+}
+
+.item-content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.steps__item:first-child .item-content {
+    margin: 0;
+    margin-right: auto;
+}
+
+.steps__item:last-child .item-content {
+    margin: 0;
+    margin-right: 2px;
+    margin-left: auto;
+}
+
+.item-icon {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-orange);
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.activity {
+    background-image: url(../assets/icons/bike.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 45px;
+}
+
+.dates {
+    background-image: url(../assets/icons/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 52px 52px;
+}
+
+.recommendations {
+    background-image: url(../assets/icons/plane.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px 45px;
+}
 
 
-/* ---------- Destinations ---------- */
+/* ---------- Destinations Section ---------- */
 
 
-/* ---------- Stories ---------- */
+/* ---------- Stories Section ---------- */
 
 
 /* ---------- Footer ---------- */
