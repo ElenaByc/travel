@@ -65,16 +65,43 @@
                 </div>
             </section>
 
-            <section class="section" id="destinations">
-                <h2 class="section__header">Popular destinations</h2>
+            <section class="section destinations">
+                <h2 class="section__header" id="destinations">Popular destinations</h2>
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="carousel__item" id="carousel-left">
+                            <span class="destination__name">Spain</span>
+                        </div>
+                        <div class="carousel__item" id="carousel-center">
+                            <span class="destination__name">Japan</span>
+                        </div>
+                        <div class="carousel__item" id="carousel-right">
+                            <span class="destination__name">USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destinations__radio">
+                    <label for="left">
+                        <input type="radio" name="destinations" class="left" id="left" value="left" />
+                        <div class="circle"></div>
+                    </label>
+                    <label for="center">
+                        <input type="radio" name="destinations" class="center" id="center" value="center" checked />
+                        <div class="circle"></div>
+                    </label>
+                    <label for="right">
+                        <input type="radio" name="destinations" class="right" id="right" value="right" />
+                        <div class="circle"></div>
+                    </label>
+                </div>
                 <button class="button">
                     <span class="arrow-icon"></span>
                     <span>Find&nbsp;More</span>
                 </button>
             </section>
 
-            <section class="section" id="stories">
-                <h2 class="section__header">Travel stories</h2>
+            <section class="section stories">
+                <h2 class="section__header" id="stories">Travel stories</h2>
                 <button class="button">
                     <span class="arrow-icon"></span>
                     <span>See&nbsp;More&nbsp;</span>
