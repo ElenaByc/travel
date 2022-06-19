@@ -51,7 +51,10 @@
 html {
     scroll-behavior: smooth;
     /* background-color: rgba(13, 96, 111, 0.5); */
-    background: linear-gradient(rgba(242, 120, 92, 0.7), 25%, rgba(13, 96, 111, 0.5));
+    background: linear-gradient(rgba(242, 120, 92, 0.7),
+            rgba(255, 255, 255, 0.7) 25%,
+            rgba(255, 255, 255, 0.7) 55%,
+            rgba(13, 96, 111, 0.5));
     background-repeat: no-repeat;
 }
 
@@ -75,7 +78,7 @@ h3 {
     background-image: url(../assets/images/bg.jpg);
     background-repeat: no-repeat;
     background-size: 1440px auto;
-    box-shadow: 0px 0px 4px 4px rgba(13, 96, 111, 0.5);
+    /* box-shadow: 0px 0px 4px 4px rgba(13, 96, 111, 0.5); */
 }
 
 a {
@@ -487,14 +490,57 @@ input[type="radio"]:hover+div {
 
 .destinations .button {
     margin: 0 auto;
-    /* padding-right: 33px; */
 }
 
 /* ---------- Stories Section ---------- */
 
 .stories {
-    padding-top: 80px;
-    height: 600px;
+    padding: 80px 120px 40px;
+}
+
+.stories__container {
+    padding: 40px 0 8px;
+    width: 100%;
+}
+
+.story {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    margin-bottom: 30px;
+}
+
+.story__content {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-primary);
+}
+
+.story__picture {
+    flex: 0 0 400px;
+    width: 400px;
+    height: 250px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+}
+
+.story__title {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 22px;
+}
+
+.story__content a {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.story__content a:hover {
+    font-size: 21px;
 }
 
 .stories .button {
