@@ -50,7 +50,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* background-color: rgba(13, 96, 111, 0.5); */
     background: linear-gradient(rgba(242, 120, 92, 0.7),
             rgba(255, 255, 255, 0.7) 25%,
             rgba(255, 255, 255, 0.7) 55%,
@@ -125,7 +124,6 @@ a {
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    /* letter-spacing: 0.03em; */
     color: var(--color-white);
 
     padding: 12px 32px;
@@ -173,6 +171,11 @@ a {
     flex-flow: row nowrap;
     column-gap: 6px;
     align-items: stretch;
+    transition: 0.3s;
+}
+
+.header__home:hover {
+    transform: scale(1.05);
 }
 
 .header__logo {
@@ -200,7 +203,6 @@ a {
 
 .header__nav-list {
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: row;
     column-gap: 42px;
 
@@ -209,7 +211,6 @@ a {
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
-    /* letter-spacing: 0.02em; */
     color: var(--color-white);
 
     list-style: none;
