@@ -51,8 +51,8 @@
 html {
     scroll-behavior: smooth;
     background: linear-gradient(rgba(242, 120, 92, 0.7),
-            rgba(255, 255, 255, 0.7) 25%,
-            rgba(255, 255, 255, 0.7) 55%,
+            rgba(255, 255, 255, 0.7) 22%,
+            rgba(255, 255, 255, 0.7) 60%,
             rgba(13, 96, 111, 0.5));
     background-repeat: no-repeat;
 }
@@ -549,3 +549,66 @@ input[type="radio"]:hover+div {
 }
 
 /* ---------- Footer ---------- */
+
+.footer {
+    padding: 10px 120px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    padding: 0;
+}
+
+.footer__school-and-github {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 22px;
+}
+
+.footer__icon {
+    height: 32px;
+    transition: all 0.3s ease-out;
+}
+
+.footer__icon:hover {
+    transform: scale(1.1);
+}
+
+.github-logo {
+    height: 40px;
+}
+
+.github-logo,
+.rss-logo {
+    filter: invert(100%);
+}
+
+.footer__copyright {
+    font-family: 'Red Hat Text Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--color-white);
+}
+
+.footer__social-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 22px;
+    padding: 4px 2px 0px 6px;
+}
+
+.twitter-logo {
+    height: 27px;
+}
+
+.youtube-logo {
+    height: 27px;
+}
