@@ -406,6 +406,7 @@ h1 {
     display: flex;
     column-gap: 60px;
     padding: 5px 0;
+    transition: all 1s ease-in-out;
 }
 
 .carousel__item {
@@ -444,18 +445,18 @@ h1 {
     background-image: url(../assets/images/usa.jpg);
 }
 
-.destinations__radio {
+.destinations__navigation {
     display: flex;
     justify-content: center;
     column-gap: 10px;
     margin-bottom: 40px;
 }
 
-.destinations__radio input {
+.destinations input {
     display: none;
 }
 
-.destinations__radio label {
+.destinations__navigation label {
     width: 20px;
     height: 20px;
     background-color: rgba(242, 120, 92, 0.5);
@@ -464,12 +465,26 @@ h1 {
     transition: 0.3s;
 }
 
-.destinations__radio label:hover {
-    background-color: rgba(242, 120, 92, 0.7);
+.destinations__navigation label:hover {
+    background-color: rgba(242, 120, 92, 0.8);
 }
 
-.destinations__radio input:checked+label {
+#left:checked~.destinations__navigation label:nth-child(1),
+#center:checked~.destinations__navigation label:nth-child(2),
+#right:checked~.destinations__navigation label:nth-child(3) {
     background-color: var(--color-orange);
+}
+
+#left:checked~.carousel-wrapper .carousel {
+    left: 320px;
+}
+
+#center:checked~.carousel-wrapper .carousel {
+    left: -540px;
+}
+
+#right:checked~.carousel-wrapper .carousel {
+    left: -1400px;
 }
 
 .destinations .button {

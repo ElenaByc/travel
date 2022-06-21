@@ -67,6 +67,9 @@
 
             <section class="section destinations">
                 <h2 class="section__header" id="destinations">Popular destinations</h2>
+                <input type="radio" name="destinations" id="left" value="left" />
+                <input type="radio" name="destinations" id="center" value="center" checked />
+                <input type="radio" name="destinations" id="right" value="right" />
                 <div class="carousel-wrapper">
                     <div class="carousel">
                         <div class="carousel__item" id="carousel-left">
@@ -80,12 +83,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="destinations__radio">
-                    <input type="radio" name="destinations" id="left" value="left" />
+                <div class="destinations__navigation"> 
                     <label for="left"></label>
-                    <input type="radio" name="destinations" id="center" value="center" checked />
                     <label for="center"></label>
-                    <input type="radio" name="destinations" id="right" value="right" />
                     <label for="right"></label>
                 </div>
                 <button class="button">
