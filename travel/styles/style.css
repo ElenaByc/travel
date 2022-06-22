@@ -42,7 +42,6 @@
 
 :root {
     --color-white: #ffffff;
-    --color-light: #E5E5E5;
     --color-primary: #0D606F;
     --color-btn-hover: #10798C;
     --color-orange: #F2785C;
@@ -74,9 +73,11 @@ h3 {
 .content-wrapper {
     width: 1440px;
     margin: 0 auto;
-    background-image: url(../assets/images/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: 1440px auto;
+    background-color: var(--color-white);
+    background-image: url(../assets/images/bg-top.jpg), url(../assets/images/bg-bottom.jpg);
+    background-position: center top, center bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
     /* box-shadow: 0px 0px 4px 4px rgba(13, 96, 111, 0.5); */
 }
 
@@ -322,6 +323,7 @@ h1 {
 
 .steps {
     padding: 80px 130px 0;
+    background-color: var(--color-white);
 }
 
 .steps__items-container {
@@ -390,6 +392,7 @@ h1 {
 
 .destinations {
     padding-top: 80px;
+    background-color: var(--color-white);
 }
 
 .carousel-wrapper {
@@ -495,6 +498,7 @@ h1 {
 
 .stories {
     padding: 80px 120px 40px;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .stories__container {
