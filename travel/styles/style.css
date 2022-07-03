@@ -71,7 +71,7 @@ h3 {
 }
 
 .content-wrapper {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: var(--color-white);
     background-image: url(../assets/images/bg-top.jpg), url(../assets/images/bg-bottom.jpg);
@@ -160,7 +160,7 @@ a {
 /* ---------- Header ---------- */
 
 .header {
-    padding: 24px 120px 24px;
+    padding: 24px 8.33% 24px;
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 
@@ -267,7 +267,7 @@ a {
 /* ---------- Preview Section ---------- */
 
 .preview {
-    padding: 30px 120px 221px;
+    padding: 30px 8.33% 221px;
 }
 
 .preview__content {
@@ -326,7 +326,7 @@ h1 {
 /* ---------- Steps Section ---------- */
 
 .steps {
-    padding: 80px 130px 40px;
+    padding: 80px 9% 40px;
     background-color: var(--color-white);
 }
 
@@ -407,8 +407,7 @@ h1 {
 .carousel {
     position: relative;
     margin: 0 auto;
-    width: 2520px;
-    left: -540px;
+    width: fit-content;
     display: flex;
     column-gap: 60px;
     padding: 5px 0;
@@ -482,15 +481,15 @@ h1 {
 }
 
 #left:checked~.carousel-wrapper .carousel {
-    left: 320px;
+    left: calc((100% - 800px) / 2);
 }
 
 #center:checked~.carousel-wrapper .carousel {
-    left: -540px;
+    left: calc((100% - 800px) / 2 - (800px + 60px));
 }
 
 #right:checked~.carousel-wrapper .carousel {
-    left: -1400px;
+    left: calc((100% - 800px) / 2 - (800px + 60px) * 2 );
 }
 
 .destinations .button {
