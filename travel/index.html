@@ -25,14 +25,20 @@
                     <li><a class="nav__link" href="#destinations">Destinations</a></li>
                     <li><a class="nav__link" href="#stories">Travel&nbsp;Stories</a></li>
                 </ul>
+                <div class="menu-shadow"></div>
             </nav>
+            <div class="header__burger-btn">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
             <button class="button">Login</button>
         </header>
 
         <main class="main">
             <section class="section preview">
-                <div class="preview__content">
-                    <h1 id="preview">Explore the beauty of the World</h1>
+                <div class="preview__content" id="preview">
+                    <h1>Explore the beauty of the World</h1>
                     <p>Receive personalized recommendations for countries, hotels, activities and more</p>
                     <div class="preview__search-box">
                         <input type="text" placeholder="What would you like to do?" autocomplete="off">
@@ -67,8 +73,8 @@
 
             <section class="section destinations">
                 <h2 class="section__header" id="destinations">Popular destinations</h2>
-                <input type="radio" name="destinations" id="left" value="left" />
-                <input type="radio" name="destinations" id="center" value="center" checked />
+                <input type="radio" name="destinations" id="left" value="left" checked />
+                <input type="radio" name="destinations" id="center" value="center" />
                 <input type="radio" name="destinations" id="right" value="right" />
                 <div class="carousel-wrapper">
                     <div class="carousel">
@@ -88,6 +94,8 @@
                     <label for="center"></label>
                     <label for="right"></label>
                 </div>
+                <div class="left-arrow nav-btn"></div>
+                <div class="right-arrow nav-btn"></div>
                 <button class="button">
                     <span class="arrow-icon"></span>
                     <span>Find&nbsp;More</span>
@@ -98,8 +106,9 @@
                 <h2 class="section__header" id="stories">Travel stories</h2>
                 <div class="stories__container">
                     <div class="story">
-                        <img class="story__picture" src="./assets/images/stories1_desktop.jpg" alt="Thailand picture"
-                            width="400" height="250">
+                        <div class="story__picture">
+                            <img src="./assets/images/stories1_desktop.jpg" alt="Thailand picture" id="pic1">
+                        </div>
                         <div class="story__content">
                             <h3 class="story__title">10 Photos of Attractive Thailand</h3>
                             <p class="story__text" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -111,12 +120,20 @@
                                 deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit...
                             </p>
+                            <p class="story__text-mobile" lang="zxx">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum
+                                dolor sit a...
+                            </p>
                             <a href="#!">Read More</a>
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story__picture" src="./assets/images/stories2_desktop.jpg"
-                            alt="Canyonlands National Park" width="400" height="250">
+                        <div class="story__picture">
+                            <img src="./assets/images/stories2_desktop.jpg" alt="Canyonlands National Park" id="pic2">
+                        </div>
                         <div class="story__content">
                             <h3 class="story__title">Canyonlands National Park, Utah</h3>
                             <p class="story__text" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -127,12 +144,20 @@
                                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                 deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit...</p>
+                            <p class="story__text-mobile" lang="zxx">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum
+                                dolor sit a...
+                            </p>
                             <a href="#!">Read More</a>
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story__picture" src="./assets/images/stories3_desktop.jpg" alt="Mountains picture"
-                            width="400" height="250">
+                        <div class="story__picture">
+                            <img src="./assets/images/stories3_desktop.jpg" alt="Mountains picture" id="pic3">
+                        </div>
                         <div class="story__content">
                             <h3 class="story__title">I left my heart in the Mountains!</h3>
                             <p class="story__text" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -143,12 +168,20 @@
                                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                 deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit...</p>
+                            <p class="story__text-mobile" lang="zxx">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum
+                                dolor sit a...
+                            </p>
                             <a href="#!">Read More</a>
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story__picture" src="./assets/images/stories4_desktop.jpg"
-                            alt="Longest journey picture" width="400" height="250">
+                        <div class="story__picture">
+                            <img src="./assets/images/stories4_desktop.jpg" alt="Longest journey picture" id="pic4">
+                        </div>
                         <div class="story__content">
                             <h3 class="story__title">The Longest journey in my life!</h3>
                             <p class="story__text" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -159,6 +192,13 @@
                                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                 deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit...</p>
+                            <p class="story__text-mobile" lang="zxx">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum
+                                dolor sit a...
+                            </p>
                             <a href="#!">Read More</a>
                         </div>
                     </div>
@@ -183,17 +223,17 @@
             <div class="footer__social">
                 <ul class="footer__social-list">
                     <li>
-                        <a href="https://www.instagram.com/" target="_blank">
+                        <a href="https://rs.school/js-stage0/" target="_blank">
                             <img src="./assets/icons/insta.svg" alt="github-logo" class="footer__icon instagram-logo">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/" target="_blank">
+                        <a href="https://github.com/elenaByc" target="_blank">
                             <img src="./assets/icons/youtube.svg" alt="github-logo" class="footer__icon youtube-logo">
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/" target="_blank">
+                        <a href="https://rs.school/" target="_blank">
                             <img src="./assets/icons/twitter.svg" alt="github-logo" class="footer__icon twitter-logo">
                         </a>
                     </li>
