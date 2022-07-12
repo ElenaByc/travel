@@ -78,6 +78,7 @@ h3 {
     background-position: center top, center bottom;
     background-repeat: no-repeat, no-repeat;
     background-size: 1440px auto, 1440px auto;
+    /* background-size: 100% auto, 100% auto; */
     box-shadow: 0px 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
@@ -235,6 +236,10 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
+.nav__link.mobile {
+    display: none;
+}
+
 .nav__link:before {
     content: '';
     background: var(--color-primary);
@@ -272,7 +277,14 @@ a {
     top: 0;
     left: 0;
     transition: 1s;
-    background-color: rgba(41, 41, 41, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu-shadow.active {
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
 }
 
 /* ---------- Preview Section ---------- */
@@ -1480,33 +1492,55 @@ h1 {
     }
 
     .header__burger-btn:hover .line {
-        background-color: var(--color-primary);
+        /* background-color: var(--color-primary); */
         transform: scale(1.05);
+    }
+
+    .header__burger-btn.active {
+        z-index: 3;
+    }
+
+    .header__burger-btn.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__burger-btn.active .line:nth-child(1) {
+        transform: translate(-110px, -30px) rotate(45deg) scale(0.9);
+    }
+
+    .header__burger-btn.active .line:nth-child(3) {
+        transform: translate(-110px, -43px) rotate(-45deg) scale(0.9);
     }
 
     .header__nav-list {
         position: fixed;
         padding: 0;
         top: 0;
-        right: -620px;
-        height: 100vh;
-        transition: all 1s ease-in-out;
+        right: -250px;
+        height: 250px;
         overflow-x: hidden;
-        font-size: 32px;
-        line-height: 51px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        row-gap: 41px;
+        row-gap: 10px;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        border-radius: 10px;
+        transition: all 0.3s ease-in;
     }
 
     .header__nav-list.active {
         right: 0;
         z-index: 2;
-        width: 100%;
-        max-width: 320px;
+        width: 165px;
+        max-width: 100%;
         background-color: var(--color-orange);
-        transition: all 1s ease-in-out;
+    }
+
+    .header__nav-list.active .nav__link.mobile {
+        display: inline-block;
     }
 
     .preview {
