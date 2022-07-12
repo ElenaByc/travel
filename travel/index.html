@@ -24,6 +24,8 @@
                     <li><a class="nav__link" href="#preview">Plan&nbsp;Your&nbsp;Trip</a></li>
                     <li><a class="nav__link" href="#destinations">Destinations</a></li>
                     <li><a class="nav__link" href="#stories">Travel&nbsp;Stories</a></li>
+                    <li class="mobile"><a class="nav__link" href="#!">Account</a></li>
+                    <li class="mobile"><a class="nav__link" href="#social">Social&nbsp;Media</a></li>
                 </ul>
                 <div class="menu-shadow"></div>
             </nav>
@@ -36,8 +38,8 @@
         </header>
 
         <main class="main">
-            <section class="section preview">
-                <div class="preview__content" id="preview">
+            <section class="section preview" id="preview">
+                <div class="preview__content">
                     <h1>Explore the beauty of the World</h1>
                     <p>Receive personalized recommendations for countries, hotels, activities and more</p>
                     <div class="preview__search-box">
@@ -73,8 +75,8 @@
 
             <section class="section destinations">
                 <h2 class="section__header" id="destinations">Popular destinations</h2>
-                <input type="radio" name="destinations" id="left" value="left" checked />
-                <input type="radio" name="destinations" id="center" value="center" />
+                <input type="radio" name="destinations" id="left" value="left" />
+                <input type="radio" name="destinations" id="center" value="center" checked />
                 <input type="radio" name="destinations" id="right" value="right" />
                 <div class="carousel-wrapper">
                     <div class="carousel">
@@ -220,7 +222,7 @@
                 </a>
             </div>
             <div class="footer__copyright">All Rights Reserved &copy; Travel Portal</div>
-            <div class="footer__social">
+            <div class="footer__social" id="social">
                 <ul class="footer__social-list">
                     <li>
                         <a href="https://rs.school/js-stage0/" target="_blank">
@@ -241,7 +243,7 @@
             </div>
         </footer>
     </div>
-    <script src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
 </body>
 
 </html>
