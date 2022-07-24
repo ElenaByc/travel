@@ -1433,7 +1433,7 @@ h1 {
         row-gap: 10px;
         box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
         border-radius: 10px;
-        transition: all 0.3s ease-in;
+        transition: all 0.5s ease-in;
     }
 
     .header__nav-list.active {
@@ -1453,7 +1453,7 @@ h1 {
         height: 100vh;
         width: 100vw;
         z-index: 1;
-        transition: all 1s ease-in;
+        transition: all 0.5s ease-in;
         background-color: rgba(0, 0, 0, 0.4);
     }
     
@@ -1604,21 +1604,22 @@ h1 {
         z-index: 1;
         /* top: 148px; */
         top: calc(58px + ((100vw - 30px) / 36 * 21) / 2 - 15px);
-    }
-
-    .nav-btn:hover {
-        transform: scale(1.05);
+        cursor: pointer;
     }
 
     .left-arrow {
         background-image: url(../assets/icons/left-arrow.svg);
-        filter: invert(54%) sepia(60%) saturate(497%) hue-rotate(323deg) brightness(95%) contrast(100%) opacity(50%);
         left: 4.6%;
     }
 
     .right-arrow {
         background-image: url(../assets/icons/right-arrow.svg);
         right: 4.6%;
+    }
+
+    .nav-btn.inactive {
+        filter: invert(54%) sepia(60%) saturate(497%) hue-rotate(323deg) brightness(95%) contrast(100%) opacity(50%);
+        cursor: auto;
     }
 
     .stories {
