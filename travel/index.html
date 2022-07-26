@@ -37,7 +37,8 @@
             <button class="button" id="login">Login</button>
             <div class="popup-shadow"></div>
             <div class="popup">
-                <h3 class="popup__title">Log in to your account</h3>
+                <h3 class="popup__title" id="login-title">Log in to your account</h3>
+                <h3 class="popup__title hide" id="register-title">Create account</h3>
                 <button class="facebook-btn popup__btn">
                     <span class="facebook-icon"></span>
                     <span>Sign&nbsp;In&nbsp;with&nbsp;Facebook</span>
@@ -46,7 +47,7 @@
                     <span class="google-icon"></span>
                     <span>Sign&nbsp;In&nbsp;with&nbsp;Google</span>
                 </button>
-                <div class="popup__separator">
+                <div class="popup__separator" id="or">
                     <span class="line"></span>
                     <span>or</span>
                     <span class="line"></span>
@@ -62,6 +63,9 @@
                 <button class="signin-btn popup__btn">
                     <span>Sign&nbsp;In</span>
                 </button>
+                <button class="signup-btn popup__btn hide">
+                    <span>Sign&nbsp;Up</span>
+                </button>
                 <div class="popup__forgot">Forgot Your Password?</div>
                 <div class="popup__separator">
                     <span class="line"></span>
@@ -69,6 +73,10 @@
                 <div class="popup__register">
                     <span>Don’t have an account?</span>
                     <span id="register-btn">Register</span>
+                </div>
+                <div class="popup__login hide">
+                    <span>Already have an account?</span>
+                    <span id="login-btn">Log&nbsp;in</span>
                 </div>
             </div>
         </header>
