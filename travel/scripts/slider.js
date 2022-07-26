@@ -12,6 +12,8 @@ export const slider = () => {
 		leftBtn.checked = true;
     leftArrow.removeEventListener("click", leftArrowClick);
     leftArrow.classList.add("inactive");
+    leftPic.style.cursor = 'auto';
+    centerPic.style.cursor = 'pointer';
 	};
 
   const setCenterPic = () => {
@@ -20,12 +22,17 @@ export const slider = () => {
     rightArrow.classList.remove("inactive");
     leftArrow.addEventListener("click", leftArrowClick);
     rightArrow.addEventListener("click", rightArrowClick);
+    leftPic.style.cursor = 'pointer';
+    centerPic.style.cursor = 'auto';
+    rightPic.style.cursor = 'pointer';
 	};
 
   const setRightPic = () => {
 		rightBtn.checked = true;
     rightArrow.removeEventListener("click", rightArrowClick);
     rightArrow.classList.add("inactive");
+    centerPic.style.cursor = 'pointer';
+    rightPic.style.cursor = 'auto';
 	};
 
   const leftArrowClick = () => {
